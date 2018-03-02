@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calcul de budget</title>
+</head>
+<body>
+    <header>
+        <h1>Calcul de budget</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Calcul des dépenses</legend>
+                <button type="button" id="add1">Ajouter</button>
+                <div>
+                    <h2>Depenses fixes</h2>                  
+                    <label for="">Loyer et charges</label>
+                    <input type="number" id="expense1" placeholder="0,00 €">
+                    <label for="">Remboursement de crédits</label>
+                    <input type="number" id="expense2" placeholder="0,00 €">
+                    <label for="">Eau/electricité/gaz</label>
+                    <input type="number" id="expense3" placeholder="0,00 €">
+                    <label for="">Telephone - internet</label>
+                    <input type="number" id="expense4" placeholder="0,00 €">
+                    <label for="">Assurance habitation</label>
+                    <input type="number" id="expense5" placeholder="0,00 €">
+                    <label for="">Assurance véhicules</label>
+                    <input type="number" id="expense6" placeholder="0,00 €">
+                    <label for="">Mutuelle sante</label>
+                    <input type="number" id="expense7" placeholder="0,00 €">
+                    <label for="">Frais de garde</label>
+                    <input type="number" id="expense8" placeholder="0,00 €">
+                    <label for="">Impôts sur le revenu</label>
+                    <input type="number" id="expense9" placeholder="0,00 €">
+                    <label for="">Impôts locaux</label>
+                    <input type="number" id="expense10" placeholder="0,00 €">
+                </div>
+                <div>
+                    <h2>Depenses courantes</h2>
+                    <label for="">Courses</label>
+                    <input type="number" id="expense11" placeholder="0,00 €">
+                    <label for="">Essence/frais de transport en commun</label>
+                    <input type="number" id="expense12" placeholder="0,00 €">
+                    <label for="">Activites sportives et culturelles</label>
+                    <input type="number" id="expense13" placeholder="0,00 €">
+                </div>
+                <div>
+                    <h2>Depenses occasionnelles</h2>
+                    <label for="">Sorties</label>
+                    <input type="number" id="expense14" placeholder="0,00 €">
+                </div>
+                <div>
+                    <h2>Autres depenses</h2>
+                    <label for="">Autres dépenses</label>
+                    <input type="number" id="expense15" placeholder="0,00 €">
+                </div>
+                <div id="addFieldExpense"></div>
+            </fieldset>
+            <fieldset>
+                <legend>Calcul des recettes</legend>
+                <button type="button" id="add2">Ajouter</button>
+                <label for="">Le salaire</label>
+                <input type="number" id="recipe1" class="field" placeholder="0,00 €">
+                <label for="">Les aides</label>
+                <input type="number" id="recipe2" class="field" placeholder="0,00 €">
+                <label for="">Les rentes</label>
+                <input type="number" id="recipe3" class="field" placeholder="0,00 €">
+                <label for="">Autres</label>
+                <input type="number" id="recipe4" class="field" placeholder="0,00 €">
+                <div id="addFieldRecipe"></div>
+            </fieldset>
+            <fieldset>
+                <legend>Epargne</legend>
+                <label for="">Epargne</label>
+                <input type="number" id="saving" class="field" placeholder="0,00 €">
+            </fieldset>
+            <fieldset>
+                <legend>Résultat</legend>
+                <label for="">Crédit</label>
+                <div id="result"></div>
+                <div id="message"></div>
+            </fieldset>
+            <input type="reset" id="btnReset" value="Réinisialiser">
+            <input type="button" name="" id="valider" value="Calculer">
+        </form>
+    </main>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
